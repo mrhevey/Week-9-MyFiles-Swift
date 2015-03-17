@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5615281AB7BB17007B2053 /* LoadExternalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5615271AB7BB17007B2053 /* LoadExternalViewController.swift */; };
 		3623B3DA1AB79D4400AE0EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623B3D91AB79D4400AE0EE8 /* AppDelegate.swift */; };
 		3623B3DC1AB79D4400AE0EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3623B3DB1AB79D4400AE0EE8 /* ViewController.swift */; };
 		3623B3DF1AB79D4400AE0EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3623B3DD1AB79D4400AE0EE8 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5615271AB7BB17007B2053 /* LoadExternalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadExternalViewController.swift; sourceTree = "<group>"; };
 		3623B3D41AB79D4400AE0EE8 /* MyFilesSwift9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFilesSwift9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3623B3D81AB79D4400AE0EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3623B3D91AB79D4400AE0EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +62,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5615261AB7B25E007B2053 /* NewClass */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NewClass;
+			sourceTree = "<group>";
+		};
 		3623B3CB1AB79D4400AE0EE8 = {
 			isa = PBXGroup;
 			children = (
+				0D5615261AB7B25E007B2053 /* NewClass */,
 				3623B3FA1AB79D6500AE0EE8 /* Views */,
 				3623B3F91AB79D5D00AE0EE8 /* PDF */,
 				3623B3D61AB79D4400AE0EE8 /* MyFilesSwift9 */,
@@ -130,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				3623B3FB1AB79D8B00AE0EE8 /* LocalPDFViewController.swift */,
+				0D5615271AB7BB17007B2053 /* LoadExternalViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -237,6 +248,7 @@
 			files = (
 				3623B3DC1AB79D4400AE0EE8 /* ViewController.swift in Sources */,
 				3623B3DA1AB79D4400AE0EE8 /* AppDelegate.swift in Sources */,
+				0D5615281AB7BB17007B2053 /* LoadExternalViewController.swift in Sources */,
 				3623B3FC1AB79D8B00AE0EE8 /* LocalPDFViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +443,7 @@
 				3623B3F51AB79D4400AE0EE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3623B3F61AB79D4400AE0EE8 /* Build configuration list for PBXNativeTarget "MyFilesSwift9Tests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +452,7 @@
 				3623B3F81AB79D4400AE0EE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

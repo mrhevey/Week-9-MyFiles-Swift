@@ -1,24 +1,28 @@
 //
-//  LocalPDFViewController.swift
+//  LoadExternalViewController.swift
 //  MyFilesSwift9
 //
-//  Created by Charles Konkol on 3/16/15.
+//  Created by webstudent on 3/16/15.
 //  Copyright (c) 2015 Rock Valley College. All rights reserved.
 //
 
 import UIKit
 
-class LocalPDFViewController: UIViewController {
+class LoadExternalViewController: UIViewController {
     
+    
+    //http://ckonkol.com/wp-content/uploads/2015/02/Spring-2015-Apps-CIS280-3.pdf
     @IBAction func btnBack(sender: UIBarButtonItem) {
         self.dismissViewControllerAnimated(false, completion: nil)
+        
     }
-
     @IBOutlet weak var webview: UIWebView!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        LoadLocalPDF()
+        LoadExternalPDF()
+
         // Do any additional setup after loading the view.
     }
 
@@ -27,11 +31,17 @@ class LocalPDFViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func LoadLocalPDF()
+
+    
+    
+    func LoadExternalPDF()
     {
-        webview.loadLocalPDF("testers")          //("testers")
-        //webview.loadExternalPDF("URL TO PDF")
+        //webview.loadLocalPDF("testers")          //("testers")
+        webview.loadExternalPDF("http://ckonkol.com/wp-content/uploads/2015/02/Spring-2015-Apps-CIS280-3.pdf")
     }
+
+    
+    
     /*
     // MARK: - Navigation
 
@@ -42,19 +52,4 @@ class LocalPDFViewController: UIViewController {
     }
     */
 
-}
-extension UIWebView {
-    func loadLocalPDF(name:String!) {
-        //load local pdf
-        let termsPath:String? = NSBundle.mainBundle().pathForResource(name, ofType: "pdf")!
-        let url = NSURL(fileURLWithPath: termsPath!)
-        let pdfRequest = NSURLRequest(URL: url!)
-        self.loadRequest(pdfRequest)
-    }
-    func loadExternalPDF(name:String!){
-        let url = NSURL(string: name)
-        let request = NSURLRequest(URL:url!)
-        self.scalesPageToFit = true
-        self.loadRequest(request)
-    }
 }
